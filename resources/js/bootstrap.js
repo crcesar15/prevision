@@ -30,6 +30,7 @@ try {
  
     require('admin-lte/bower_components/bootstrap/dist/js/bootstrap');
     require('admin-lte');
+    require('admin-lte/plugins/iCheck/icheck');
  } catch (e) {}
 
 /**

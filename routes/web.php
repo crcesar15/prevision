@@ -11,6 +11,13 @@
 |
 */
 
-Route::get('/', function () {
-    return view('layout');
-});
+
+Route::get('auth/login', 'Auth\AuthController@getLogin');
+Route::post('auth/login', 'Auth\AuthController@postLogin')->name('login');
+Route::get('auth/logout', 'Auth\AuthController@getLogout')->name('logout');
+
+Route::get('/', 'Auth\AuthController@getLogin');
+
+Route::get('/home', function(){
+    return view('home.index');
+})->middleware('auth')->name('home');

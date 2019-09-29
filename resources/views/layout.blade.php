@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>Laravel</title>
+    <title>Nunchi</title>
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
@@ -17,6 +17,7 @@
 <body class="hold-transition skin-blue sidebar-mini">
     <div class="wrapper">
         @yield('navigation')
+        @yield('sidebar')
         <!-- Content Wrapper. Contains page content -->
         <div class="content-wrapper">
             <!-- Content Header (Page header) -->
@@ -25,15 +26,11 @@
                     Dashboard
                     <small>Version 2.0</small>
                 </h1>
-                <ol class="breadcrumb">
-                    <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-                    <li class="active">Dashboard</li>
-                </ol>
             </section>
 
             <!-- Main content -->
             <section class="content">
-
+                @yield('content')
             </section>
         </div>
         <!-- /.content-wrapper -->
