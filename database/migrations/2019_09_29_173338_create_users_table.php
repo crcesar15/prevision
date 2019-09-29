@@ -22,6 +22,8 @@ class CreateUsersTable extends Migration
             $table->string('status');
             $table->string('picture');
             $table->string('password');
+            $table->unsignedInteger('entity_id');
+            $table->foreign('entity_id')->references('id')->on('entities');
             $table->unsignedInteger('role_id');
             $table->foreign('role_id')->references('id')->on('roles');
             $table->softDeletes();

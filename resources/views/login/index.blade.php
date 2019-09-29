@@ -9,16 +9,17 @@
     <title>Nunchi</title>
 
     <!-- Fonts -->
+    <link rel="icon" type="image/png" href="{{asset('images/icon.png')}}">
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
     <link rel="stylesheet" href="{{asset('css/app.css')}}">
 </head>
 
 <body class="hold-transition login-page" style="background-image:url({{asset('images/bg.jpg')}}); background-repeat:no-repeat; background-size:cover;">
-    <div class="jumbotron text-center" style="background-color: rgba(45, 70, 105, 0.95); color:white;">
+    <div class="jumbotron text-center" style="background-color: rgba(45, 70, 105, 0.95); color:white; ">
         <h1><i class="fa fa-child"> </i> NUNCHI</h1>
         <h3>Sistema de Detección de Niños en Riesgo</h3>
     </div>
-    <div class="login-box" style="margin-top:60px; margin-bottom:20px;">
+    <div class="login-box" style="margin-top:20px; margin-bottom:20px;">
         <div class="login-box-body" style="border-radius: 15px;">
             <p class="login-box-msg">Sign in to start your session</p>
             <form action="{{ route('login') }}" method="post">
@@ -47,15 +48,16 @@
             @endif
             <div class="text-center">
                 <a href="register.html" class="text-center">Did you forget your password?</a>
+                <br>
+                <img src="{{asset('images/logo-emi.png')}}" alt="logo-emi" height="120">
             </div>
-
         </div>
         <!-- /.login-box-body -->
     </div>
     <!-- /.login-box -->
-    <div class="row" style="padding:40px; ">
+    <div class="row" style="margin:40px;">
         <div class="text-center col-12 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3" style="border-radius: 15px; background-color: rgba(255,255,255,0.80)">
-            <b><i>NUNCHI: a veces noonchi, es un concepto coreano que significa el arte sutil y la capacidad de escuchar y evaluar los estados de ánimo de los demás. En la cultura occidental, nunchi podría describirse como el concepto de inteligencia emocional.</i></b> 
+            <b><i>NUNCHI: A veces "noonchi", es un concepto coreano que significa el arte sutil y la capacidad de escuchar y evaluar los estados de ánimo de los demás. En la cultura occidental, nunchi podría describirse como el concepto de inteligencia emocional.</i></b> 
         </div>
     </div>
 

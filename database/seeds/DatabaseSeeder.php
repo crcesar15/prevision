@@ -19,6 +19,10 @@ class DatabaseSeeder extends Seeder
             'description'=> 'This role have all access and permissions'
         ]);
 
+        factory(\App\Entity::class,1)->create([
+            'name' => 'Terminal Provisional Minasa'
+        ]);
+
         factory(\App\User::class, 1)->create([
             'first_name' => 'admin',
             'last_name' => 'admin',

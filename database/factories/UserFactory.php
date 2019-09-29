@@ -24,6 +24,7 @@ $factory->define(App\User::class, function (Faker $faker) {
         'picture' => \Faker\Provider\Image::Image(storage_path() . '/app/public/profile', 200, 200, 'people', false),
         'password' => bcrypt('123456'), // 123456
         'role_id' => \App\Role::all()->random()->id,
+        'entity_id' => \App\Role::all()->random()->id,
         'remember_token' => Str::random(10),
     ];
 });
